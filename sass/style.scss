@@ -9,7 +9,7 @@ $columnCount: 12;
 
 .container {
 
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 
   .row {
@@ -89,6 +89,16 @@ $columnCount: 12;
     }
   }
 }
+// @font-face {
+// 	font-family: 'Helvetica Neue LT Std';
+// 	src: url('HelveticaNeueLTStd-UltLtEx.eot');
+// 	src: local('Helvetica Neue LT Std 23 Ultra Light Extended'), local('HelveticaNeueLTStd-UltLtEx'),
+// 		url('HelveticaNeueLTStd-UltLtEx.eot?#iefix') format('embedded-opentype'),
+// 		url('HelveticaNeueLTStd-UltLtEx.woff') format('woff'),
+// 		url('HelveticaNeueLTStd-UltLtEx.ttf') format('truetype');
+// 	font-weight: 200;
+// 	font-style: normal;
+// }
 
 
 @font-face {
@@ -433,9 +443,71 @@ background-color: white;
 //gallery
 
 div.tags-container{
-    display: inline-block;
-    div.img-containers{
-        display: inline;
+    margin-bottom: 1.5rem;
+
+    div.img-tags{
+        display: inline-block;
+        border:1px solid black;
+        border-radius: 15%;
+        line-height: 100%;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        font-weight: 700;
+
+
     }
+
+}
+div.img-container2{
+    display: inline-block;
+    float: left;
+    width: 33.33%;
+
+}
+//contact format
+
+.contact{
+    form{
+        width:100%;
+        input, textarea{
+            width: 80%;
+            height: 3.5rem;
+            margin: 1.5rem 10% 0 10%;
+            padding: 0 0 0 1.5rem;
+            color: black;
+        }
+        textarea{
+            height: 15rem;
+            padding-top: 1.5rem;
+        }
+
+    }
+}
+.address{
+    font-size: 1.5rem;
+    font-weight: 700;
+    :first-child{
+        font-family: 'Helvetica Neue LT Std', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 1.5rem 10% 1.5rem 10%;
+    }
+
+
+    :nth-child(2){
+        font-size: 1.75rem;
+        font-family: 'Helvetica Neue LT Std', sans-serif;
+        margin: 0 10% 1.5rem 10%;
+        }
+    :nth-child(3){
+        display: inline-block;
+        font-size: 1.5rem;
+        font-family: 'Helvetica Neue LT Std', sans-serif;
+        margin: 0 10% 1.5rem 10%;
+
+    }
+}
+.watch_more, .send_email{
+    width: 9rem;
+    height: 3rem;
 
 }
