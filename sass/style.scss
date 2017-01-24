@@ -505,9 +505,23 @@ div.img-container2{
         margin: 0 10% 1.5rem 10%;
 
     }
+
+
+}
+.social-icon-set{
+    img{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: 1.5rem 10% 1.5rem 10%;
+
+    }
 }
 .watch_more, .send_email{
+
     width: 9rem;
     height: 3rem;
 
+}
+.send_email{
+    margin: auto;
 }
