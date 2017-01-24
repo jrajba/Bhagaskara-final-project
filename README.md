@@ -1,2 +1,2 @@
 # Bhagaskara-final-project
-final-project
+Coders Lab final project
