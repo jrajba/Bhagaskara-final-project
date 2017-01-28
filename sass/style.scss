@@ -460,7 +460,11 @@ div.tags-container{
 div.img-container2{
     display: inline-block;
     float: left;
-    width: 33.33%;
+    img{
+        width:100%;
+        height: auto;
+
+    }
 
 }
 //contact format
