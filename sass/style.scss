@@ -81,6 +81,7 @@ $columnCount: 12;
 
 
 
+
       @for $i from 1 through $columnCount {
         .col-#{$i} {
           width: (100%/$columnCount) * $i;
@@ -89,6 +90,10 @@ $columnCount: 12;
     }
   }
 }
+
+
+
+
 // @font-face {
 // 	font-family: 'Helvetica Neue LT Std';
 // 	src: url('HelveticaNeueLTStd-UltLtEx.eot');
@@ -118,13 +123,46 @@ $small-logo-font-color: #676767;
 
 body{
 
-    border: 1px solid red;
+
 
 }
+@media (max-width: 640px) {
+    #services-main{
+        display: none;
+    }
+    .newClass1 *{
+        stroke: $span-color;
+    }
+    .main-titles{
+        width:40% !important;
+        height: auto;
+    }
+    .col-3{
+        margin: 20px 0 0 0 !important;
+    }
+    #button1{
+        position: absolute;
+        top: 0rem;
+        left: 36%;
+        width: 30%;
+        height: auto;
+    }
+    .slick-arrow{
+        width: 15%;
+        height: auto;
+    }
+    .img-container2{
+        float: none !important;
+    }
+    .watch_more{
+        width: 30% !important;
+        height: auto !important;
+    }
+  }
 
 .header{
     width:100%;
-    border: 1px solid red;
+
     background-image: url("../img/base.png");
     background-position: top;
     background-size: cover;
@@ -211,10 +249,11 @@ path {
 }
 
 
+
 // section 1
 .main-menu {
 
-    border:1px solid red;
+
     z-index: 99;
 }
     nav.main-nav{
@@ -246,7 +285,7 @@ path {
 //section 2
 
 .home{
-border: 1px solid red;
+
 background-color: #eeeeee;
 background-size: cover;
 .col-3{
@@ -276,7 +315,7 @@ background-size: cover;
 //section 3
 
 .about{
-    border:1px solid red;
+
     .container{
         .row2{
             padding: 5rem 0 5rem 0;
@@ -520,12 +559,23 @@ div.img-container2{
 
     }
 }
-.watch_more, .send_email{
+.send_email{
 
-    width: 9rem;
-    height: 3rem;
+    width: 30%;
+    height: auto;
 
 }
+.watch_more{
+
+    width: 15%;
+    height: auto;
+}
+
 .send_email{
     margin: auto;
+}
+
+.main-titles{
+    width:25%;
+    height: auto;
 }
