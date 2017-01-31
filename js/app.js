@@ -118,16 +118,8 @@ var firstH1 = $("#firstId");
 var secondH1 =  $("#secondId");
 var thirdH1 =  $("#thirdId");
 var fourthH1 =  $("#fourthId");
-console.log(firstH1);
-console.log(secondH1);
-console.log(thirdH1);
-console.log(fourthH1);
-
 
 var slider2 = $(".slider2-section");
-console.log(slider2);
-
-
 
 window.addEventListener("autoplay", function(){
 
@@ -136,12 +128,6 @@ window.addEventListener("autoplay", function(){
     var succes = $(".slider2").find(".slick-current").data("succes");
     var fails = $(".slider2").find(".slick-current").data("fails");
     var costumers = $(".slider2").find(".slick-current").data("costumers");
-
-    console.log(days);
-    console.log(succes);
-    console.log(fails);
-    console.log(costumers);
-
 
     firstH1.text(days);
     secondH1.text(succes);
@@ -164,7 +150,47 @@ window.addEventListener("autoplay", function(){
 
 });
 
-//counter animation
+//walidacja
+
+var submitBtn = $(".send_email");
+var nameSpan = $(".span-name");
+var emailSpan = $(".span-email");
+var textareaSpan = $(".span-textarea");
+var success = $(".success");
+var name = $("#name");
+var email = $("#email");
+var text = $("textarea");
+
+
+var form = $("form");
+
+submitBtn.on("click", function(){
+
+    var canSend = true;
+
+if (name.val().length>=3) {
+    nameSpan.text("");
+}else {
+    canSend = false;
+    nameSpan.text("Your Name is to short");
+}
+if (email.val().indexOf("@")>0) {
+    emailSpan.text("");
+}else {
+    canSend = false;
+    emailSpan.text("There is something wrong with Your email");
+}
+if (text.val().length>0) {
+    textareaSpan.text("");
+}else {
+    canSend = false;
+    textareaSpan.text("Type Your message");
+}
+
+
+
+
+});
 
 
 });
