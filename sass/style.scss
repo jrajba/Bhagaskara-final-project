@@ -379,6 +379,66 @@ nav.main-nav {
 }
 
 .slider-section {
+    .person-img1 {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #cdcdcd;
+        background-image: url("../img/1.jpeg");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 1.5rem;
+
+    }
+    .person-img2 {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #cdcdcd;
+        background-image: url("../img/2.jpeg");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 1.5rem;
+
+    }
+    .person-img3 {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #cdcdcd;
+        background-image: url("../img/3.jpeg");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 1.5rem;
+
+    }
+    .person-img4 {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #cdcdcd;
+        background-image: url("../img/4.jpeg");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 1.5rem;
+
+    }
+    .person-img5 {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #cdcdcd;
+        background-image: url("../img/5.jpeg");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 1.5rem;
+
+    }
     .person-img {
         display: inline-block;
         width: 150px;
@@ -386,7 +446,15 @@ nav.main-nav {
         border-radius: 50%;
         background-color: #cdcdcd;
         margin-bottom: 1.5rem;
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+
+        }
+
     }
+
 
     h5 {
         margin: 1rem 0 0.5rem;
@@ -462,12 +530,16 @@ span.progres-bar {
             text-decoration: none;
             border-radius: 50%;
             border: 1px solid black;
-            background-color: lightgrey;
+            background-color: white;
             font-size: 0px;
             width: 0.75rem;
             height: 0.75rem;
 
 
+        }
+        button:hover{
+            background-color: #9f449b;
+            border: 1px solid #9f449b;
         }
         &:first-of-type{
             margin-left: 0rem;
@@ -499,10 +571,15 @@ div.tags-container {
     div.img-tags {
         display: inline-block;
         border: 1px solid black;
-        border-radius: 15%;
+        border-radius: 10px;
         line-height: 100%;
         padding: 0.25rem 0.5rem;
         font-weight: 700;
+    }
+    div.img-tags:hover{
+        border: 1px solid $span-color;
+        background-color: $span-color;
+        color: white;
     }
 }
 
@@ -601,4 +678,7 @@ div.img-container2 {
 .success {
     color: green;
     font-weight: bold;
+}
+.active{
+    color: $span-color !important;
 }

@@ -34,11 +34,32 @@ $(function() {
 
     $(document).on('click', 'a', function(event) {
         event.preventDefault();
+        // var menuElem = $(".main-nav").find("li");
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
+
+
     });
+
+    // gallery
+
+    var gallery = $("#portfolio").find(".gallery2");
+    var allPictures = gallery.find("img");
+    var tags = $(".tags-container").find(".img-tags");
+    console.log(tags);
+
+
+    // tags.on("click", function(){
+    //
+    //     allPictures.find("")
+    //
+    // })
+
+
+
+
 
     //sticky menu
     $(function() {
@@ -188,7 +209,7 @@ $(function() {
             nameSpan.text("");
         } else {
             canSend = false;
-            nameSpan.text("Your Name is to short");
+            nameSpan.text("Your Name is too short");
         }
         if (email.val().indexOf("@") > 0) {
             emailSpan.text("");
@@ -203,12 +224,17 @@ $(function() {
             textareaSpan.text("Type Your message");
         }
 
+        if (canSend === true) {
+            success.text("Message sent")
+        }else {
 
+        }
 
 
     });
 
-    
+
+
 
 
 });
