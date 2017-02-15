@@ -48,14 +48,64 @@ $(function() {
     var gallery = $("#portfolio").find(".gallery2");
     var allPictures = gallery.find("img");
     var tags = $(".tags-container").find(".img-tags");
-    console.log(tags);
+    var imgCont = $(".img-container2");
+    var web = tags.find(".web");
+    
+    tags.on("click", function(){
+
+        // if ($(this).hasClass("gallery-tags")) {
+        //     $(this).removeClass("gallery-tags");
+        // }else {
+        //     $(this).addClass("gallery-tags");
+        // }
+
+        if ($(".first-picture").hasClass($(this).text())) {
+            $(".first-picture").show();
+        }else {
+            $(".first-picture").hide();
+        }
 
 
-    // tags.on("click", function(){
-    //
-    //     allPictures.find("")
-    //
-    // })
+        if ($(".second-picture").hasClass($(this).text())) {
+            $(".second-picture").show();
+        }else {
+
+            $(".second-picture").hide();
+        }
+
+        if ($(".third-picture").hasClass($(this).text())) {
+            $(".third-picture").show();
+        }
+        else {
+
+            $(".third-picture").hide();
+        }
+
+        if ($(".fourth-picture").hasClass($(this).text())) {
+            $(".fourth-picture").show();
+        }else {
+
+            $(".fourth-picture").hide();
+        }
+
+        if ($(".fifth-picture").hasClass($(this).text())) {
+            $(".fifth-picture").show();
+        }else {
+
+            $(".fifth-picture").hide();
+        }
+
+        if ($(".sixth-picture").hasClass($(this).text())) {
+            $(".sixth-picture").show();
+        }else {
+
+            $(".sixth-picture").hide();
+        }
+
+
+    });
+
+
 
 
 
@@ -151,6 +201,8 @@ $(function() {
 
     });
 
+
+
     var firstH1 = $("#firstId");
     var secondH1 = $("#secondId");
     var thirdH1 = $("#thirdId");
@@ -158,7 +210,7 @@ $(function() {
 
     var slider2 = $(".slider2-section");
 
-    window.addEventListener("autoplay", function() {
+    window.addEventListener("autoplay",  function() {
 
 
         var days = $(".slider2").find(".slick-current").data("days");
@@ -186,6 +238,7 @@ $(function() {
 
 
     });
+
 
     //walidacja
 

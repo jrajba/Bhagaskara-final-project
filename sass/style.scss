@@ -570,16 +570,17 @@ div.tags-container {
 
     div.img-tags {
         display: inline-block;
-        border: 1px solid black;
+        border: 1px solid $span-color;
         border-radius: 10px;
         line-height: 100%;
         padding: 0.25rem 0.5rem;
         font-weight: 700;
+        background-color: $span-color;
+        color:white;
+
     }
     div.img-tags:hover{
-        border: 1px solid $span-color;
-        background-color: $span-color;
-        color: white;
+        cursor: pointer;
     }
 }
 
@@ -592,7 +593,7 @@ div.img-container2 {
         height: auto;
     }
 }
-//contact format
+//contact form
 
 .contact {
     form {
@@ -681,4 +682,17 @@ div.img-container2 {
 }
 .active{
     color: $span-color !important;
+}
+
+.gallery-tags{
+    display: inline-block !important;
+    border: 1px solid black !important;
+    border-radius: 10px !important;
+    line-height: 100% !important;
+    padding: 0.25rem 0.5rem !important;
+    font-weight: 700 !important;
+    background-color: white !important;
+    color: black !important;
+
+
 }
