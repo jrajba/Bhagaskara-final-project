@@ -121,8 +121,7 @@ body {}
         left: 36%;
         width: 30%;
         height: auto;
-        margin: 1rem 0 1.5rem 0;
-
+        margin: 1rem 0 1.5rem;
     }
 
     .slick-arrow {
@@ -138,27 +137,25 @@ body {}
         width: 30% !important;
         height: auto !important;
     }
+
     .home {
-
         .col-3 {
-
             p {
-
                 margin-bottom: 2rem;
-
             }
         }
     }
-    .devices{
-        margin-bottom: 1rem;
-        .img-container{
 
-        }
+    .devices {
+        margin-bottom: 1rem;
+
+        .img-container {}
     }
-    .second-slider{
-        .container{
-            .row{
-                .col-6{
+
+    .second-slider {
+        .container {
+            .row {
+                .col-6 {
                     float: left !important;
                     width: 50%;
                 }
@@ -301,7 +298,6 @@ nav.main-nav {
             display: inline-block;
             width: 85%;
             margin-top: 1rem;
-
         }
     }
 }
@@ -315,7 +311,6 @@ nav.main-nav {
     .container {
         .row2 {
             padding: 5rem 0;
-
             p {
                 font-size: 1.25rem;
             }
@@ -389,8 +384,8 @@ nav.main-nav {
         background-position: center;
         background-size: cover;
         margin-bottom: 1.5rem;
-
     }
+
     .person-img2 {
         display: inline-block;
         width: 150px;
@@ -401,8 +396,8 @@ nav.main-nav {
         background-position: center;
         background-size: cover;
         margin-bottom: 1.5rem;
-
     }
+
     .person-img3 {
         display: inline-block;
         width: 150px;
@@ -413,8 +408,8 @@ nav.main-nav {
         background-position: center;
         background-size: cover;
         margin-bottom: 1.5rem;
-
     }
+
     .person-img4 {
         display: inline-block;
         width: 150px;
@@ -425,8 +420,8 @@ nav.main-nav {
         background-position: center;
         background-size: cover;
         margin-bottom: 1.5rem;
-
     }
+
     .person-img5 {
         display: inline-block;
         width: 150px;
@@ -437,8 +432,8 @@ nav.main-nav {
         background-position: center;
         background-size: cover;
         margin-bottom: 1.5rem;
-
     }
+
     .person-img {
         display: inline-block;
         width: 150px;
@@ -446,22 +441,18 @@ nav.main-nav {
         border-radius: 50%;
         background-color: #cdcdcd;
         margin-bottom: 1.5rem;
-        img{
+
+        img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-
         }
-
     }
-
 
     h5 {
         margin: 1rem 0 0.5rem;
         font-size: 1.25rem;
     }
-
-    p {}
 
     .social-img {
         display: inline-block;
@@ -531,22 +522,20 @@ span.progres-bar {
             border-radius: 50%;
             border: 1px solid black;
             background-color: white;
-            font-size: 0px;
+            font-size: 0;
             width: 0.75rem;
             height: 0.75rem;
-
-
         }
-        button:hover{
+
+        button:hover {
             background-color: #9f449b;
             border: 1px solid #9f449b;
         }
-        &:first-of-type{
-            margin-left: 0rem;
+
+        &:first-of-type {
+            margin-left: 0;
         }
-
     }
-
 }
 
 .second-slider-datasets {
@@ -557,8 +546,9 @@ span.progres-bar {
 .second-slider {
     background-color: #eeeeee;
     margin-top: 2rem;
-    .container{
-        .row{
+
+    .container {
+        .row {
             margin-bottom: 2rem;
         }
     }
@@ -576,10 +566,10 @@ div.tags-container {
         padding: 0.25rem 0.5rem;
         font-weight: 700;
         background-color: $span-color;
-        color:white;
-
+        color: white;
     }
-    div.img-tags:hover{
+
+    div.img-tags:hover {
         cursor: pointer;
     }
 }
@@ -599,7 +589,8 @@ div.img-container2 {
     form {
         width: 100%;
 
-        input, textarea {
+        input,
+        textarea {
             width: 80%;
             height: 3.5rem;
             margin: 1.5rem 10% 0;
@@ -665,8 +656,7 @@ div.img-container2 {
 .main-titles {
     width: 25%;
     height: auto;
-    margin: 3rem 0 2rem 0;
-
+    margin: 3rem 0 2rem;
 }
 
 .span-email,
@@ -680,11 +670,12 @@ div.img-container2 {
     color: green;
     font-weight: bold;
 }
-.active{
+
+.active {
     color: $span-color !important;
 }
 
-.gallery-tags{
+.gallery-tags {
     display: inline-block !important;
     border: 1px solid black !important;
     border-radius: 10px !important;
@@ -693,6 +684,4 @@ div.img-container2 {
     font-weight: 700 !important;
     background-color: white !important;
     color: black !important;
-
-
 }

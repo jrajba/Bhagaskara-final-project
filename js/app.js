@@ -4,30 +4,20 @@ $(function() {
     var svg = $(".header").find("svg");
 
     svg.on("mouseover", function() {
-
         $(this).find("symbol").addClass("header-path");
-
     });
-
     svg.on("mouseout", function() {
-
         $(this).find("symbol").removeClass("header-path");
-
     });
 
     //hoover na 3 sekcji
     var svgMenu = $(".home").find("svg");
 
     svgMenu.on("mouseover", function() {
-
         $(this).addClass("menu-section-hexagons");
-
     });
-
     svgMenu.on("mouseout", function() {
-
         $(this).removeClass("menu-section-hexagons");
-
     });
 
     // smooth scroll
@@ -35,12 +25,9 @@ $(function() {
     $(document).on('click', 'a', function(event) {
         event.preventDefault();
         // var menuElem = $(".main-nav").find("li");
-
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
-
-
     });
 
     // gallery
@@ -50,70 +37,49 @@ $(function() {
     var tags = $(".tags-container").find(".img-tags");
     var imgCont = $(".img-container2");
     var web = tags.find(".web");
-    
-    tags.on("click", function(){
 
-        // if ($(this).hasClass("gallery-tags")) {
-        //     $(this).removeClass("gallery-tags");
-        // }else {
-        //     $(this).addClass("gallery-tags");
-        // }
+    tags.on("click", function() {
 
         if ($(".first-picture").hasClass($(this).text())) {
             $(".first-picture").show();
-        }else {
+        } else {
             $(".first-picture").hide();
         }
 
-
         if ($(".second-picture").hasClass($(this).text())) {
             $(".second-picture").show();
-        }else {
-
+        } else {
             $(".second-picture").hide();
         }
 
         if ($(".third-picture").hasClass($(this).text())) {
             $(".third-picture").show();
-        }
-        else {
-
+        } else {
             $(".third-picture").hide();
         }
 
         if ($(".fourth-picture").hasClass($(this).text())) {
             $(".fourth-picture").show();
-        }else {
-
+        } else {
             $(".fourth-picture").hide();
         }
 
         if ($(".fifth-picture").hasClass($(this).text())) {
             $(".fifth-picture").show();
-        }else {
-
+        } else {
             $(".fifth-picture").hide();
         }
 
         if ($(".sixth-picture").hasClass($(this).text())) {
             $(".sixth-picture").show();
-        }else {
-
+        } else {
             $(".sixth-picture").hide();
         }
-
-
     });
 
-
-
-
-
-
-
     //sticky menu
-    $(function() {
 
+    $(function() {
         var menuPosition = $('#services-main').offset().top;
 
         $(window).scroll(function() {
@@ -141,9 +107,7 @@ $(function() {
     var percent3 = $("#percent3");
     var percent4 = $("#percent4");
 
-
     var current = $(".our-team").find(".slider").find(".slick-current");
-
 
     btnNext.on("click", function() {
 
@@ -169,8 +133,6 @@ $(function() {
         percent2.text(graphic);
         percent3.text(html);
         percent4.text(ui);
-
-
     });
 
     btnPrev.on("click", function() {
@@ -197,11 +159,7 @@ $(function() {
         percent2.text(graphic);
         percent3.text(html);
         percent4.text(ui);
-
-
     });
-
-
 
     var firstH1 = $("#firstId");
     var secondH1 = $("#secondId");
@@ -210,8 +168,7 @@ $(function() {
 
     var slider2 = $(".slider2-section");
 
-    window.addEventListener("autoplay",  function() {
-
+    window.addEventListener("autoplay", function() {
 
         var days = $(".slider2").find(".slick-current").data("days");
         var succes = $(".slider2").find(".slick-current").data("succes");
@@ -234,11 +191,7 @@ $(function() {
                 }
             });
         });
-
-
-
     });
-
 
     //walidacja
 
@@ -250,8 +203,6 @@ $(function() {
     var name = $("#name");
     var email = $("#email");
     var text = $("textarea");
-
-
     var form = $("form");
 
     submitBtn.on("click", function() {
@@ -276,18 +227,9 @@ $(function() {
             canSend = false;
             textareaSpan.text("Type Your message");
         }
-
         if (canSend === true) {
             success.text("Message sent")
-        }else {
-
+        } else {
         }
-
-
     });
-
-
-
-
-
 });
