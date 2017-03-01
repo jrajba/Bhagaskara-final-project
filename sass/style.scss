@@ -104,7 +104,9 @@ body {}
 
     .newClass1 * {
         stroke: $span-color;
+
     }
+
 
     .main-titles {
         width: 40% !important;
@@ -122,12 +124,19 @@ body {}
         width: 30%;
         height: auto;
         margin: 1rem 0 1.5rem;
+
+
     }
+
+
 
     .slick-arrow {
         width: 15%;
         height: auto;
+
     }
+
+
 
     .img-container2 {
         float: none !important;
@@ -162,6 +171,14 @@ body {}
             }
         }
     }
+}
+
+.slick-arrow:hover{
+    cursor: pointer;
+
+}
+svg.newClass1:hover{
+    cursor: pointer;
 }
 
 .header {
@@ -350,9 +367,13 @@ nav.main-nav {
     img.button {
         position: absolute;
         top: -3rem;
-        center: 0;
         width: 9rem;
         height: 3rem;
+        &:hover{
+            cursor: pointer;
+            transform: scale(0.9);
+            transition: 0.3s;
+        }
     }
 }
 
@@ -510,6 +531,7 @@ span.progres-bar {
     flex-direction: row;
     justify-content: center;
 
+
     li {
         display: inline-block;
         display: flex;
@@ -530,6 +552,8 @@ span.progres-bar {
         button:hover {
             background-color: #9f449b;
             border: 1px solid #9f449b;
+            cursor: pointer;
+
         }
 
         &:first-of-type {
@@ -647,10 +671,20 @@ div.img-container2 {
     width: 15%;
     height: auto;
     margin-top: 3rem;
+    &:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
 }
 
 .send_email {
     margin: auto;
+    &:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
 }
 
 .main-titles {
