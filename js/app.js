@@ -36,45 +36,17 @@ $(function() {
     var allPictures = gallery.find("img");
     var tags = $(".tags-container").find(".img-tags");
     var imgCont = $(".img-container2");
-    var web = tags.find(".web");
 
     tags.on("click", function() {
+        var tagss = $(this).text();
+        imgCont.each(function(){
+            if($(this).hasClass(tagss)){
+                $(this).show();
+            }else{
+                $(this).hide();
+            }
+        });
 
-        if ($(".first-picture").hasClass($(this).text())) {
-            $(".first-picture").show();
-        } else {
-            $(".first-picture").hide();
-        }
-
-        if ($(".second-picture").hasClass($(this).text())) {
-            $(".second-picture").show();
-        } else {
-            $(".second-picture").hide();
-        }
-
-        if ($(".third-picture").hasClass($(this).text())) {
-            $(".third-picture").show();
-        } else {
-            $(".third-picture").hide();
-        }
-
-        if ($(".fourth-picture").hasClass($(this).text())) {
-            $(".fourth-picture").show();
-        } else {
-            $(".fourth-picture").hide();
-        }
-
-        if ($(".fifth-picture").hasClass($(this).text())) {
-            $(".fifth-picture").show();
-        } else {
-            $(".fifth-picture").hide();
-        }
-
-        if ($(".sixth-picture").hasClass($(this).text())) {
-            $(".sixth-picture").show();
-        } else {
-            $(".sixth-picture").hide();
-        }
     });
 
     //sticky menu
@@ -84,7 +56,6 @@ $(function() {
 
         $(window).scroll(function() {
             if ($(window).scrollTop() > menuPosition) {
-                //$('#sticky').css({position: 'fixed', top: '0px', float: 'right'});
                 $('#services-main').addClass("sticky");
             } else {
                 $('#services-main').removeClass("sticky");
@@ -94,8 +65,7 @@ $(function() {
 
     //progres bary
 
-    var btnNext = $(".our-team").find(".buttons").find("img").last();
-    var btnPrev = $(".our-team").find(".buttons").find("img").first();
+    var slickArrows = $(".our-team").find(".buttons");
 
     var bar1 = $("#bar1");
     var bar2 = $("#bar2");
@@ -107,40 +77,13 @@ $(function() {
     var percent3 = $("#percent3");
     var percent4 = $("#percent4");
 
-    var current = $(".our-team").find(".slider").find(".slick-current");
+    slickArrows.on("click", function() {
 
-    btnNext.on("click", function() {
-
-        var web = $(".our-team").find(".slider").find(".slick-current").data("web");
-        var graphic = $(".our-team").find(".slider").find(".slick-current").data("graphic");
-        var html = $(".our-team").find(".slider").find(".slick-current").data("html");
-        var ui = $(".our-team").find(".slider").find(".slick-current").data("ui");
-
-        bar1.find("span").animate({
-            width: web
-        }, 500);
-        bar2.find("span").animate({
-            width: graphic
-        }, 500);
-        bar3.find("span").animate({
-            width: html
-        }, 500);
-        bar4.find("span").animate({
-            width: ui
-        }, 500);
-
-        percent1.text(web);
-        percent2.text(graphic);
-        percent3.text(html);
-        percent4.text(ui);
-    });
-
-    btnPrev.on("click", function() {
-
-        var web = $(".our-team").find(".slider").find(".slick-current").data("web");
-        var graphic = $(".our-team").find(".slider").find(".slick-current").data("graphic");
-        var html = $(".our-team").find(".slider").find(".slick-current").data("html");
-        var ui = $(".our-team").find(".slider").find(".slick-current").data("ui");
+        var slickCurrent = $(".our-team").find(".slider").find(".slick-current");
+        var web = slickCurrent.data("web");
+        var graphic = slickCurrent.data("graphic");
+        var html = slickCurrent.data("html");
+        var ui = slickCurrent.data("ui");
 
         bar1.find("span").animate({
             width: web
@@ -160,20 +103,22 @@ $(function() {
         percent3.text(html);
         percent4.text(ui);
     });
+
+    // drugi slider z counterem
 
     var firstH1 = $("#firstId");
     var secondH1 = $("#secondId");
     var thirdH1 = $("#thirdId");
     var fourthH1 = $("#fourthId");
-
     var slider2 = $(".slider2-section");
 
     window.addEventListener("autoplay", function() {
 
-        var days = $(".slider2").find(".slick-current").data("days");
-        var succes = $(".slider2").find(".slick-current").data("succes");
-        var fails = $(".slider2").find(".slick-current").data("fails");
-        var costumers = $(".slider2").find(".slick-current").data("costumers");
+        var slickCurrent2 = $(".slider2").find(".slick-current");
+        var days = slickCurrent2.data("days");
+        var succes = slickCurrent2.data("succes");
+        var fails = slickCurrent2.data("fails");
+        var costumers = slickCurrent2.data("costumers");
 
         firstH1.text(days);
         secondH1.text(succes);
