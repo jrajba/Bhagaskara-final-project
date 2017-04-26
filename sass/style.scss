@@ -212,11 +212,13 @@ svg.newClass1:hover{
 .header-text {
     color: $font-color;
 
-    h4 {
+    :first-child {
         font-size: 30px;
+        font-weight: 700;
+        margin: 15px 0 15px;
     }
 
-    p {
+    :last-child {
         margin: 15px 0 55px;
         font-size: 15px;
     }
